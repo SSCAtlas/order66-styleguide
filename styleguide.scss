@@ -296,7 +296,7 @@ $offcanvas-horizontal-width: 35%;
 [data-bs-theme=light] .btn-secondary:focus {
 	--bs-btn-bg: #B6C7E3;
 }
-[data-bs-theme=light] .btn-tertiary {
+.btn-tertiary {
 	--bs-btn-bg: #FEBE3F !important;
 	--bs-btn-hover-bg: #FEC34E;
 	--bs-btn-active-bg: #FEC75A;
@@ -308,7 +308,7 @@ $offcanvas-horizontal-width: 35%;
 	--bs-btn-disabled-color: #697F8A;
 	--bs-btn-focus-shadow-rgb: 217, 164, 6;
 }
-[data-bs-theme=light] .btn-tertiary:focus {
+.btn-tertiary:focus {
 	--bs-btn-hover-bg: #FEC75A;
 }
 [data-bs-theme=light] .btn-interactive, 
