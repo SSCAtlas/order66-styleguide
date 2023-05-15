@@ -72,7 +72,7 @@
 // import User20 from './components/icons/User20.vue'
 // import User27 from './components/icons/User27.vue'
 import ListApi from './js/ListApi.js'
-import * as Icons from './components/icons/'
+import * as Icons from './components/icons'
 export default {
 	ListApi,
 	install: (app, options) => {
