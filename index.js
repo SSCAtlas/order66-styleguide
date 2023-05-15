@@ -71,7 +71,9 @@ import User18 from './components/icons/User18.vue'
 import User19 from './components/icons/User19.vue'
 import User20 from './components/icons/User20.vue'
 import User27 from './components/icons/User27.vue'
+import ListApi from './js/ListApi.js'
 export default {
+	ListApi,
 	install: (app, options) => {
 		app.component("LabeledDropdown", LabeledDropdown)
 		app.component("Pagination", Pagination)
