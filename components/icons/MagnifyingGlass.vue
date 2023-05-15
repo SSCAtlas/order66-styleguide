@@ -16,7 +16,6 @@
 
 <script>
 export default {
-	name: 'magglass',
 	props: {
 		fillColor: {
 			type: String,
