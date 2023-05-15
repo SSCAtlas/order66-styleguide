@@ -1,6 +1,6 @@
 {
   "name": "ava-styleguide",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Style guide for Ava Technology LLC",
   "main": "index.js",
   "scripts": {
