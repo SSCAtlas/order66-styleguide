@@ -77,6 +77,7 @@ export default {
 	ListApi,
 	install: (app, options) => {
 		Icons.map(icon => {
+			console.log(app.component(`"${icon}"`, icon))
 		return app.component(`"${icon}"`, icon)
 		})
 // 		app.component("LabeledDropdown", LabeledDropdown)
