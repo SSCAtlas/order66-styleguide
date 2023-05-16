@@ -4,13 +4,13 @@ npm install ava-styleguide
 ```
 bootstrap will be added along with override file
 
-### Create a new scss file named "styleguide.scss" in the root directory
+### (New Project Only) Create a new scss file named "styleguide.scss" in the root directory
 Add an import to styleguide.scss
 ```sh
 @import './node_modules/ava-styleguide/styleguide.scss';
 ```
 
-### Add the scss script to package.json file in main project
+### (New Project Only) Add the scss script to package.json file in main project
 ```sh
 "scss": "sass override.scss compiled-bootstrap/override-bootstrap.css"
 ```
@@ -18,7 +18,7 @@ Add an import to styleguide.scss
 npm run scss
 ```
 a new folder named compiled-bootstrap with a file named override-bootstrap.css will populate at root of project
-# add imports to main.js order is important
+# (New Project Only) add imports to main.js order is important
 ```sh
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -30,8 +30,8 @@ import '../compiled-bootstrap/override-bootstrap.css'
 npm update ava-styleguide
 npm run scss
 ```
-
-# ListApiPlugin 
+# API Usage
+## ListApiPlugin 
 #### in main.js file:
 ```sh
 import listApiPlugin from 'ava-styleguide/js/plugin/ListApiPlugin.js'
@@ -67,7 +67,7 @@ call it in a function/actions
 ```sh
 const response = await listApi.getAll()
 ```
-# UserApiPlugin 
+## UserApiPlugin 
 #### in main.js file:
 ```sh
 import userApiPlugin from 'ava-styleguide/js/plugin/UserApiPlugin.js'
@@ -103,7 +103,7 @@ call it in a function/actions
 ```sh
 const response = await userApi.getCurrentUser()
 ```
-# LegacyUserApiPlugin 
+## LegacyUserApiPlugin 
 #### in main.js file:
 ```sh
 import legacyUserApiPlugin from 'ava-styleguide/js/plugin/LegacyUserApiPlugin.js'
