@@ -73,8 +73,9 @@ import User20 from './components/icons/User20.vue'
 import User27 from './components/icons/User27.vue'
 import ListApi from './js/ListApi.js'
 export default {
-	ListApi,
-	install: (app, options) => {
+	install: (app, options, listname) => {
+		const listApi = new ListApi(import.meta.env.VITE_APP_LISTS_BASE_URL, listname)
+		app.config.globalProperties.$listApi = listApi
 		app.component("LabeledDropdown", LabeledDropdown)
 		app.component("Pagination", Pagination)
 		app.component("AccordionArrowDown", AccordionArrowDown)
