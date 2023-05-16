@@ -1,21 +1,22 @@
 # styleguide
-
-# npm install ava-styleguide
+```sh
+npm install ava-styleguide
+```
 bootstrap will be added along with override file
 
-# create a new scss file named "override.scss"
-
-# add an import to styleguide 
+### Create a new scss file named "styleguide.scss" in the root directory
+Add an import to styleguide.scss
 ```sh
 @import './node_modules/ava-styleguide/styleguide.scss';
 ```
 
-# add the scss script to package.json file in main project
+### Add the scss script to package.json file in main project
 ```sh
 "scss": "sass override.scss compiled-bootstrap/override-bootstrap.css"
 ```
-
-# npm run scss
+```sh
+npm run scss
+```
 a new folder named compiled-bootstrap with a file named override-bootstrap.css will populate at root of project
 # add imports to main.js order is important
 ```sh
@@ -33,7 +34,7 @@ npm run scss
 # ListApiPlugin 
 #### in main.js file:
 ```sh
-import listPiPlugin from 'ava-styleguide'
+import listApiPlugin from 'ava-styleguide/js/plugin/ListApiPlugin.js'
 ```
 ```sh
 const listConfigs = [
@@ -53,14 +54,27 @@ methods: {
 	}
 }
 ```
+#### Use in Pinia store
+in your main.js file after app.use(listApiPlugin, listConfigs)
+```sh
+export const listApi = app.config.globalProperties.$listApis['<listName from listConfigs>']
+```
+in your pinia store
+```sh
+import { listApi } from '../main.js'
+```
+call it in a function/actions
+```sh
+const response = await listApi.getAll()
+```
 # UserApiPlugin 
 #### in main.js file:
 ```sh
-import userApiPlugin from 'ava-styleguide'
+import userApiPlugin from 'ava-styleguide/js/plugin/UserApiPlugin.js'
 ```
 ```sh
 const userConfigs = [
-	{ envVariable: import.meta.env.VITE_APP_USER_BASE_URL, key: '<unique key identifier>'}
+	{ envVariable: import.meta.env.VITE_APP_USER_BASE_URL, key: '<unique key name here>'}
 ]
 ```
 ```sh
@@ -69,21 +83,34 @@ app.use(userApiPlugin, userConfigs)
 #### In your component
 ```sh
 methods: {
-	async getData() {
-		const userApi = this.$listApis['<above key in userConfigs here>']
-		const response = await userApi.getGetCurrentUser()
+	async getUserData() {
+		const userApi = this.$userApis['<above key in userConfigs here>']
+		const response = await userApi.getCurrentUser()
 		console.log(response.d)
 	}
 }
 ```
+#### Use in Pinia store
+in your main.js file after app.use(listApiPlugin, listConfigs)
+```sh
+export const userApi = app.config.globalProperties.$userApis['<key from userConfigs>']
+```
+in your pinia store
+```sh
+import { userApi } from '../main.js'
+```
+call it in a function/actions
+```sh
+const response = await userApi.getCurrentUser()
+```
 # LegacyUserApiPlugin 
 #### in main.js file:
 ```sh
-import legacyUserApiPlugin from 'ava-styleguide'
+import legacyUserApiPlugin from 'ava-styleguide/js/plugin/LegacyUserApiPlugin.js'
 ```
 ```sh
 const legacyUserConfigs = [
-	{ envVariable: process.env.VUE_APP_USER_BASE_URL, key: '<unique key identifier>'}
+	{ envVariable: process.env.VUE_APP_USER_BASE_URL, key: '<unique key name here>'}
 ]
 ```
 ```sh
@@ -92,11 +119,24 @@ app.use(legacyUserApiPlugin, legacyUserConfigs)
 #### In your component
 ```sh
 methods: {
-	async getData() {
-		const userApi = this.$legacyUserApis['<above key in legacyUserConfigs here>']
-		const response = await userApi.getGetCurrentUser()
+	async getUserData() {
+		const userApi = this.$legacyUserApis['<above key in userConfigs here>']
+		const response = await userApi.getCurrentUser()
 		console.log(response.d)
 	}
 }
+```
+#### Use in Pinia store
+in your main.js file after app.use(listApiPlugin, listConfigs)
+```sh
+export const legacyUserApi = app.config.globalProperties.$legacyUserApis['<key from legacyUserConfigs>']
+```
+in your pinia store
+```sh
+import { legacyUserApi } from '../main.js'
+```
+call it in a function/actions
+```sh
+const response = await legacyUserApi.getCurrentUser()
 ```
 
