@@ -71,14 +71,7 @@ import User18 from './components/icons/User18.vue'
 import User19 from './components/icons/User19.vue'
 import User20 from './components/icons/User20.vue'
 import User27 from './components/icons/User27.vue'
-// import listApiPlugin from './js/plugin/ListApiPlugin';
-import userApiPlugin from './js/plugin/UserApiPlugin';
-import legacyUserApiPlugin from './js/plugin/LegacyUserApiPlugin';
-// import ListApi from './js/api/ListApi'
 export default {
-// listApiPlugin,
-userApiPlugin,
-legacyUserApiPlugin,
 install: (app) => {
 		app.component("LabeledDropdown", LabeledDropdown)
 		app.component("Pagination", Pagination)
