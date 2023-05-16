@@ -71,11 +71,18 @@ import User18 from './components/icons/User18.vue'
 import User19 from './components/icons/User19.vue'
 import User20 from './components/icons/User20.vue'
 import User27 from './components/icons/User27.vue'
-import ListApi from './js/ListApi.js'
+import ListApi from './js/api/ListApi.js'
 export default {
-	install: (app, options, listname) => {
-		const listApi = new ListApi(import.meta.env.VITE_APP_LISTS_BASE_URL, listname)
-		app.config.globalProperties.$listApi = listApi
+install: (app, options) => {
+	const listApis = {};
+
+	options.forEach((config) => {
+	const { envVariable, listName } = config;
+	const listApi = new ListApi(import.meta.env[envVariable], listName);
+	listApis[listName] = listApi;
+	});
+
+	app.config.globalProperties.$listApis = listApis;
 		app.component("LabeledDropdown", LabeledDropdown)
 		app.component("Pagination", Pagination)
 		app.component("AccordionArrowDown", AccordionArrowDown)
