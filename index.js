@@ -74,21 +74,12 @@ import User27 from './components/icons/User27.vue'
 // import listApiPlugin from './js/plugin/ListApiPlugin';
 import userApiPlugin from './js/plugin/UserApiPlugin';
 import legacyUserApiPlugin from './js/plugin/LegacyUserApiPlugin';
-import ListApi from './js/api/ListApi'
+// import ListApi from './js/api/ListApi'
 export default {
 // listApiPlugin,
 userApiPlugin,
 legacyUserApiPlugin,
-install: (app, options) => {
-		const listApis = {};
-
-		options.forEach((config) => {
-		const { envVariable, listName } = config;
-		const listApi = new ListApi(envVariable, listName);
-		listApis[listName] = listApi;
-		});
-
-		app.config.globalProperties.$listApis = listApis;
+install: (app) => {
 		app.component("LabeledDropdown", LabeledDropdown)
 		app.component("Pagination", Pagination)
 		app.component("AccordionArrowDown", AccordionArrowDown)
