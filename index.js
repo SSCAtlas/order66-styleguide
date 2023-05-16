@@ -78,7 +78,7 @@ install: (app, options) => {
 
 	options.forEach((config) => {
 	const { envVariable, listName } = config;
-	const listApi = new ListApi(import.meta.env[envVariable], listName);
+	const listApi = new ListApi(envVariable, listName);
 	listApis[listName] = listApi;
 	});
 
