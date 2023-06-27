@@ -1014,6 +1014,7 @@ $offcanvas-horizontal-width: 35%;
 .btn-outline-secondary {
 	--bs-btn-color: #0E4C87 !important;
 	--bs-btn-border-color: #0E4C87 !important;
+	--bs-btn-border-width: 2px !important;
 	--bs-btn-hover-color: #fff !important;
 	--bs-btn-hover-bg: #0E4C87 !important;
 	--bs-btn-hover-border-color: #0E4C87 !important;
@@ -1031,6 +1032,7 @@ $offcanvas-horizontal-width: 35%;
 .btn-outline-success {
 	--bs-btn-color: #006C50 !important;
 	--bs-btn-border-color: #006C50 !important;
+	--bs-btn-border-width: 2px !important;
 	--bs-btn-hover-color: #fff !important;
 	--bs-btn-hover-bg: #006C50 !important;
 	--bs-btn-hover-border-color: #006C50 !important;
@@ -1048,6 +1050,7 @@ $offcanvas-horizontal-width: 35%;
 .btn-outline-info {
 	--bs-btn-color: #4ED8E7 !important;
 	--bs-btn-border-color: #4ED8E7 !important;
+	--bs-btn-border-width: 2px !important;
 	--bs-btn-hover-color: #000 !important;
 	--bs-btn-hover-bg: #4ED8E7 !important;
 	--bs-btn-hover-border-color: #4ED8E7 !important;
@@ -1065,6 +1068,7 @@ $offcanvas-horizontal-width: 35%;
 .btn-outline-warning {
 	--bs-btn-color: #F8BD49 !important;
 	--bs-btn-border-color: #F8BD49 !important;
+	--bs-btn-border-width: 2px !important;
 	--bs-btn-hover-color: #000 !important;
 	--bs-btn-hover-bg: #F8BD49 !important;
 	--bs-btn-hover-border-color: #F8BD49 !important;
@@ -1082,6 +1086,7 @@ $offcanvas-horizontal-width: 35%;
 .btn-outline-danger {
 	--bs-btn-color: #B3261E !important;
 	--bs-btn-border-color: #B3261E !important;
+	--bs-btn-border-width: 2px !important;
 	--bs-btn-hover-color: #fff !important;
 	--bs-btn-hover-bg: #B3261E !important;
 	--bs-btn-hover-border-color: #B3261E !important;
@@ -1099,6 +1104,7 @@ $offcanvas-horizontal-width: 35%;
 .btn-outline-light {
 	--bs-btn-color: #EDF2F5 !important;
 	--bs-btn-border-color: #EDF2F5 !important;
+	--bs-btn-border-width: 2px !important;
 	--bs-btn-hover-color: #000 !important;
 	--bs-btn-hover-bg: #EDF2F5 !important;
 	--bs-btn-hover-border-color: #EDF2F5 !important;
@@ -1116,6 +1122,7 @@ $offcanvas-horizontal-width: 35%;
 .btn-outline-dark {
 	--bs-btn-color: #1B1E1F !important;
 	--bs-btn-border-color: #1B1E1F !important;
+	--bs-btn-border-width: 2px !important;
 	--bs-btn-hover-color: #fff !important;
 	--bs-btn-hover-bg: #1B1E1F !important;
 	--bs-btn-hover-border-color: #1B1E1F !important;
