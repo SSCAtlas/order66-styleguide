@@ -16,6 +16,9 @@
 				</div>
 			</div>
 		</button>
+		<div v-if="subtext">
+			<p class="mb-0 ms-3 subtext">{{ subtext }}</p>
+		</div>
 		<div
 			v-if="showDropdown"
 			class="options-container bg-white d-flex flex-column py-2 shadow"
@@ -53,6 +56,7 @@ export default {
 			type: String,
 			default: "Initial Option",
 		},
+		subtext: String
 	},
 	data() {
 		return {
@@ -122,5 +126,10 @@ export default {
 .dropdown-options:hover {
 	background-color: var(--bs-secondary95);
 	cursor: pointer;
+}
+.subtext {
+	font-size: 12px;
+	letter-spacing: 0.4px;
+	color: var(--bs-gray10);
 }
 </style>
