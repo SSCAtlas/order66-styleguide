@@ -4,7 +4,8 @@
   "description": "Style guide for Ava Technology LLC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"scss-test": "sass styleguide.scss test/test.css"
   },
   "repository": {
     "type": "git",
