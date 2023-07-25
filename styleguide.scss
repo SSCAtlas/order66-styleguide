@@ -640,6 +640,7 @@ $offcanvas-horizontal-width: 35%;
 .text-secondary95 {color: var(--bs-secondary95);}
 .text-secondary99 {color: var(--bs-secondary99);}
 
+.text-gold,.text-tertiary {color: var(--bs-tertiary);}
 .text-tertiary10 {color: var(--bs-tertiary10);}
 .text-tertiary20 {color: var(--bs-tertiary20);}
 .text-tertiary30 {color: var(--bs-tertiary30);}
@@ -1256,4 +1257,11 @@ $offcanvas-horizontal-width: 35%;
 	font-weight: 500 !important ;
 	line-height: 1rem !important ;
 	letter-spacing: 0.03125rem !important ;
+}
+
+.text-extended {
+	letter-spacing: 0.3em;
+}
+.text-condensed {
+	letter-spacing: -0.1em;
 }
