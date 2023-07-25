@@ -70,7 +70,7 @@ $gray-900: #1B1E1F;
 	--bs-secondary: #0E4C87;
 	--bs-secondary20: #00315D;
 	--bs-secondary10: #001C39;
-	--bs-tertiary99: vAR(--BS-LIGHT)BFF;
+	--bs-tertiary99: #FFFBFF;
 	--bs-tertiary95: #FFEED8;
 	--bs-tertiary90: #FFDEA9;
 	--bs-tertiary80: #FEBE3F;
@@ -94,7 +94,7 @@ $gray-900: #1B1E1F;
 	--bs-success30: #00513C;
 	--bs-success20: #003828;
 	--bs-success10: #002116;
-	--bs-warning99: vAR(--BS-LIGHT)BFF;
+	--bs-warning99: #FFFBFF;
 	--bs-warning95: #FFEED8;
 	--bs-warning90: #FFDEA8;
 	--bs-warning80: #F8BD49;
@@ -106,7 +106,7 @@ $gray-900: #1B1E1F;
 	--bs-warning30: #5E4200;
 	--bs-warning20: #422D00;
 	--bs-warning10: #271900;
-	--bs-danger99: vAR(--BS-LIGHT)BF9;
+	--bs-danger99: #FFFBF9;
 	--bs-danger95: #FCEEEE;
 	--bs-danger90: #F9DEDC;
 	--bs-danger80: #F2B8B5;
@@ -272,7 +272,7 @@ $offcanvas-horizontal-width: 35%;
 }
 
 [data-bs-theme=light] {
-	--vff-bg-color: vAR(--BS-LIGHT);
+	--vff-bg-color: #FFF;
 }
 
 
@@ -329,7 +329,7 @@ $offcanvas-horizontal-width: 35%;
 
 [data-bs-theme=light] .btn-danger {
 	background-color: #B3261E;
-	color: vAR(--BS-LIGHT) !important;
+	color: #FFF !important;
 }
 [data-bs-theme=light] .btn-outline-primary {
 	--bs-btn-border-color: var(--bs-grayvar-500);
