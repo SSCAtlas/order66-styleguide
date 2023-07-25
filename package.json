@@ -1,11 +1,11 @@
 {
   "name": "ava-styleguide",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Style guide for Ava Technology LLC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"scss-test": "sass styleguide.scss test/test.css"
+    "scss-test": "sass styleguide.scss test/test.css"
   },
   "repository": {
     "type": "git",
