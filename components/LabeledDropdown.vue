@@ -110,8 +110,10 @@ export default {
 	position: absolute;
 	border-radius: 5px;
 	width: 100%;
+	max-height: 300px;
+	overflow: auto;
 	font-size: 16px;
-	z-index: 2;
+	z-index: 100;
 }
 .dropdown-options {
 	display: flex;
