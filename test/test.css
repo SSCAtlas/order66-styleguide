@@ -54,7 +54,7 @@
   --bs-secondary: #0E4C87;
   --bs-secondary20: #00315D;
   --bs-secondary10: #001C39;
-  --bs-tertiary99: vAR(--BS-LIGHT)BFF;
+  --bs-tertiary99: #FFFBFF;
   --bs-tertiary95: #FFEED8;
   --bs-tertiary90: #FFDEA9;
   --bs-tertiary80: #FEBE3F;
@@ -78,7 +78,7 @@
   --bs-success30: #00513C;
   --bs-success20: #003828;
   --bs-success10: #002116;
-  --bs-warning99: vAR(--BS-LIGHT)BFF;
+  --bs-warning99: #FFFBFF;
   --bs-warning95: #FFEED8;
   --bs-warning90: #FFDEA8;
   --bs-warning80: #F8BD49;
@@ -90,7 +90,7 @@
   --bs-warning30: #5E4200;
   --bs-warning20: #422D00;
   --bs-warning10: #271900;
-  --bs-danger99: vAR(--BS-LIGHT)BF9;
+  --bs-danger99: #FFFBF9;
   --bs-danger95: #FCEEEE;
   --bs-danger90: #F9DEDC;
   --bs-danger80: #F2B8B5;
@@ -150,17 +150,6 @@
   --bs-sbd3: #872634;
   --bs-sld45: #A1A8B0;
   --bs-dark-rgb: 0, 255,0;
-}
-
-[data-bs-theme=dark] {
-  --bs-primary: var(--bs-primary80);
-  --bs-secondary: var(--bs-secondary80);
-  --bs-tertiary: var(--bs-tertiary80);
-  --bs-success: var(--bs-success80);
-  --bs-warning: var(--bs-warning80);
-  --bs-danger: var(--bs-danger80);
-  --bs-interactive: var(--bs-interactive80);
-  --bs-info: var(--bs-info80);
 }
 
 [data-bs-theme=dark] {
@@ -281,7 +270,7 @@ $btn-padding-x: 2rem;
   src: url("../node_modules/ava-styleguide/fonts/Eurostile-LT-Medium.woff");
 }
 [data-bs-theme=light] {
-  --vff-bg-color: vAR(--BS-LIGHT);
+  --vff-bg-color: #FFF;
 }
 
 /* Buttons: */
@@ -345,7 +334,7 @@ $btn-padding-x: 2rem;
 
 [data-bs-theme=light] .btn-danger {
   background-color: #B3261E;
-  color: vAR(--BS-LIGHT) !important;
+  color: #FFF !important;
 }
 
 [data-bs-theme=light] .btn-outline-primary {
@@ -13085,6 +13074,10 @@ textarea.form-control-lg {
   color: var(--bs-secondary99);
 }
 
+.text-gold, .text-tertiary {
+  color: var(--bs-tertiary);
+}
+
 .text-tertiary10 {
   color: var(--bs-tertiary10);
 }
@@ -13954,6 +13947,14 @@ textarea.form-control-lg {
   font-weight: 500 !important;
   line-height: 1rem !important;
   letter-spacing: 0.03125rem !important;
+}
+
+.text-extended {
+  letter-spacing: 0.3em;
+}
+
+.text-condensed {
+  letter-spacing: -0.1em;
 }
 
 /*# sourceMappingURL=test.css.map */

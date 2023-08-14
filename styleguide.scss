@@ -20,6 +20,21 @@ $gray-700: #464849;
 $gray-800: #303233;
 $gray-900: #1B1E1F;
 
+$position-values: (
+	0: 0,
+	10: 10%,
+	20: 20%,
+	25: 25%,
+	30: 30%,
+	40: 40%,
+	50: 50%,
+	60: 60%,
+	70: 70%,
+	75: 75%,
+	80: 80%,
+	90: 90%,
+	100: 100%
+);
 
 /* Second, additional new vars for BS: */
 :root,
@@ -401,7 +416,7 @@ $offcanvas-horizontal-width: 35%;
 }
 
 
-
+// uncomment ./node_modules ... for runnning test
 @import "../bootstrap/scss/bootstrap";
 // @import './node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -641,7 +656,8 @@ $offcanvas-horizontal-width: 35%;
 .text-secondary95 {color: var(--bs-secondary95);}
 .text-secondary99 {color: var(--bs-secondary99);}
 
-.text-gold,.text-tertiary {color: var(--bs-tertiary);}
+.text-gold {color: var(--bs-tertiary);}
+.text-tertiary {color: var(--bs-tertiary);}
 .text-tertiary10 {color: var(--bs-tertiary10);}
 .text-tertiary20 {color: var(--bs-tertiary20);}
 .text-tertiary30 {color: var(--bs-tertiary30);}
@@ -863,6 +879,13 @@ $offcanvas-horizontal-width: 35%;
 	--bs-btn-disabled-color: var(--bs-light) !important;
 	--bs-btn-disabled-bg: var(--bs-primary) !important;
 	--bs-btn-disabled-border-color: var(--bs-primary) !important;
+}
+
+.btn-primary-dark {
+	--bs-btn-color: var(--bs-primary) !important;
+	--bs-btn-hover-color: var(--bs-primary) !important;
+	--bs-btn-hover-bg: #7ec2f1 !important;
+	--bs-btn-bg: var(--bs-primary80) !important; 
 }
 
 .btn-secondary {

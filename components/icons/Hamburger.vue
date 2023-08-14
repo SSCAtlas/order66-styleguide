@@ -73,10 +73,4 @@ export default {
 		transform: rotate(-45deg) translate(-5px, -3px);
 	}
 
-@media (min-width: 992px) {
-	.hamburger {
-		@extend .open;
-	}
-}
-
 </style>
