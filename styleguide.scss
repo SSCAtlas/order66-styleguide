@@ -1289,3 +1289,13 @@ $offcanvas-horizontal-width: 35%;
 .text-condensed {
 	letter-spacing: -0.1em;
 }
+// shadow 
+.elevation-1 {
+	box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.35);
+}
+.elevation-2 {
+	box-shadow: 1px 4px 15px 0px rgba(0, 0, 0, 0.40);
+}
+.elevation-3 {
+	box-shadow: 1px 5px 20px 0px rgba(0, 0, 0, 0.50);
+}
