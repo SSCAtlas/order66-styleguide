@@ -27,7 +27,7 @@ import '../compiled-bootstrap/override-bootstrap.css'
 
 # any updates to package
 ```sh
-npm update ava-styleguide
+npm update --save ava-styleguide
 npm run scss
 ```
 # API Usage
@@ -140,3 +140,13 @@ call it in a function/actions
 const response = await legacyUserApi.getCurrentUser()
 ```
 
+### Update styleguide.scss
+after adding the classes you want to populate in the styleguide 
+-push changes to github
+```sh
+npm version <major, minor, patch>
+```
+you need a contributor npm account to run these, verify on https://www.npmjs.com/package/ava-styleguide/access
+``sh
+npm publish
+```
