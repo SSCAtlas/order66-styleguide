@@ -25,7 +25,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../compiled-bootstrap/override-bootstrap.css'
 ```
 
-# any updates to package
+# after any updates are made to the package here, then do this in the app repo which uses this:
 ```sh
 npm update --save ava-styleguide
 npm run scss
