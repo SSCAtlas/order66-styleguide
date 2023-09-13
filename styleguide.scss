@@ -888,6 +888,13 @@ $offcanvas-horizontal-width: 35%;
 	--bs-btn-bg: var(--bs-primary80) !important; 
 }
 
+.btn-primary-light {
+	--bs-btn-color: var(--bs-primary) !important;
+	--bs-btn-hover-color: var(--bs-primary) !important;
+	--bs-btn-hover-bg: #B9D7EE !important;
+	--bs-btn-bg: var(--bs-primary90) !important; 
+}
+
 .btn-secondary {
 	--bs-btn-color: var(--bs-light) !important;
 	--bs-btn-bg: #0E4C87 !important;
