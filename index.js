@@ -57,6 +57,7 @@ import PersonInternal from './components/icons/PersonInternal.vue'
 import PersonList from './components/icons/PersonList.vue'
 import PersonPlus from './components/icons/PersonPlus.vue'
 import Phone from './components/icons/Phone.vue'
+import PhoneIcon from './components/icons/PhoneIcon.vue'
 import PieChart from './components/icons/PieChart.vue'
 import Plus from './components/icons/Plus.vue'
 import ReplyBubble from './components/icons/ReplyBubble.vue'
@@ -129,6 +130,7 @@ install: (app) => {
 		app.component("PersonList", PersonList)
 		app.component("PersonPlus", PersonPlus)
 		app.component("Phone", Phone)
+		app.component("PhoneIcon", PhoneIcon)
 		app.component("PieChart", PieChart)
 		app.component("Plus", Plus)
 		app.component("ReplyBubble", ReplyBubble)
