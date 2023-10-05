@@ -150,7 +150,6 @@ export default {
 
 <style scoped>
 li p {
-	height: 75%;
 	padding: 0.25rem;
 	transition: 300ms ease;
 }
