@@ -416,7 +416,7 @@ $offcanvas-horizontal-width: 35%;
 }
 
 
-// uncomment ./node_modules ... for runnning test
+// uncomment ./node_modules ... for runnning test (LINE 421)
 @import "../bootstrap/scss/bootstrap";
 // @import './node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -1229,6 +1229,47 @@ $offcanvas-horizontal-width: 35%;
 	--bs-btn-disabled-color: var(--bs-danger) !important;
 	--bs-btn-disabled-bg: transparent !important;
 	--bs-btn-disabled-border-color: var(--bs-danger) !important;
+	--bs-gradient: none !important;
+}
+.btn-outline-danger-dark {
+	--bs-btn-color: var(--bs-danger) !important;
+	--bs-btn-border-color: var(--bs-gray-var50) !important;
+	--bs-btn-hover-color: var(--bs-danger) !important;
+	--bs-btn-hover-bg: #7ec2f1 !important;
+	--bs-btn-bg: transparent !important; 
+	--bs-btn-border-width: 2px !important;
+	--bs-btn-hover-color: var(--bs-danger) !important;
+	--bs-btn-hover-bg: var(--bs-danger80) !important;
+	--bs-btn-hover-border-color: var(--bs-danger80) !important;
+	--bs-btn-focus-shadow-rgb: 0, 38, 58 !important;
+	--bs-btn-active-color: var(--bs-danger) !important;
+	--bs-btn-active-bg: var(--bs-danger80) !important;
+	--bs-btn-active-border-color: var(--bs-danger80) !important;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+	--bs-btn-disabled-color: var(--bs-danger80) !important;
+	--bs-btn-disabled-bg: transparent !important;
+	--bs-btn-disabled-border-color: var(--bs-danger80) !important;
+	--bs-gradient: none !important;
+}
+
+.btn-outline-danger-light {
+	--bs-btn-color: var(--bs-danger) !important;
+	--bs-btn-border-color: var(--bs-gray-var50) !important;
+	--bs-btn-hover-color: var(--bs-danger) !important;
+	--bs-btn-hover-bg: #7ec2f1 !important;
+	--bs-btn-bg: transparent !important; 
+	--bs-btn-border-width: 2px !important;
+	--bs-btn-hover-color: var(--bs-danger) !important;
+	--bs-btn-hover-bg: var(--bs-danger90) !important;
+	--bs-btn-hover-border-color: var(--bs-danger90) !important;
+	--bs-btn-focus-shadow-rgb: 0, 38, 58 !important;
+	--bs-btn-active-color: var(--bs-danger) !important;
+	--bs-btn-active-bg: var(--bs-danger90) !important;
+	--bs-btn-active-border-color: var(--bs-danger90) !important;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+	--bs-btn-disabled-color: var(--bs-danger90) !important;
+	--bs-btn-disabled-bg: transparent !important;
+	--bs-btn-disabled-border-color: var(--bs-danger90) !important;
 	--bs-gradient: none !important;
 }
 

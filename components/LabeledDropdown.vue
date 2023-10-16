@@ -65,6 +65,9 @@ export default {
 			pointDown: true,
 		};
 	},
+	mounted() {
+		window.addEventListener("click", this.outsideClicked);
+	},
 	methods: {
 		toggleDropdown() {
 			this.showDropdown = !this.showDropdown;
@@ -79,6 +82,14 @@ export default {
 			this.$emit("changeOption", selectedOption);
 			this.closeDropdown();
 		},
+		outsideClicked(event) {
+			if (!this.$el.contains(event.target)) {
+			this.closeDropdown();
+			}
+		},
+	},
+	beforeDestroy() {
+		window.removeEventListener("click", this.outsideClicked);
 	},
 };
 </script>
