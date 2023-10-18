@@ -33,6 +33,7 @@
 				{{ option }}
 			</ul>
 		</div>
+		<div v-if="showDropdown" class="overlay" @click="outsideClicked"></div>
 	</div>
 </template>
 
@@ -65,9 +66,6 @@ export default {
 			pointDown: true,
 		};
 	},
-	mounted() {
-		window.addEventListener("click", this.outsideClicked);
-	},
 	methods: {
 		toggleDropdown() {
 			this.showDropdown = !this.showDropdown;
@@ -83,13 +81,9 @@ export default {
 			this.closeDropdown();
 		},
 		outsideClicked(event) {
-			if (!this.$el.contains(event.target)) {
+			console.log("Clicked")
 			this.closeDropdown();
-			}
 		},
-	},
-	beforeDestroy() {
-		window.removeEventListener("click", this.outsideClicked);
 	},
 };
 </script>
@@ -124,7 +118,7 @@ export default {
 	max-height: 300px;
 	overflow: auto;
 	font-size: 16px;
-	z-index: 100;
+	z-index: 1000;
 }
 .dropdown-options {
 	display: flex;
@@ -145,4 +139,14 @@ export default {
 	letter-spacing: 0.4px;
 	color: var(--bs-gray10);
 }
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 999;
+}
+
 </style>
