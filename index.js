@@ -72,8 +72,14 @@ import User18 from './components/icons/User18.vue'
 import User19 from './components/icons/User19.vue'
 import User20 from './components/icons/User20.vue'
 import User27 from './components/icons/User27.vue'
+import Pause from './components/icons/Pause.vue'
+import ThumbUp from './components/icons/ThumbUp.vue'
+import Star from './components/icons/Star.vue'
 export default {
 install: (app) => {
+		app.component("Pause", Pause)
+		app.component("ThumbUp", ThumbUp)
+		app.component("Star", Star)
 		app.component("LabeledDropdown", LabeledDropdown)
 		app.component("Pagination", Pagination)
 		app.component("AccordionArrowDown", AccordionArrowDown)
