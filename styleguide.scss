@@ -280,11 +280,20 @@ $offcanvas-horizontal-width: 35%;
 	font-family: 'RobotoFlex';
 	src: url('../node_modules/ava-styleguide/fonts/Roboto-Flex-variable.woff');
 }
-
+body {
+	font-family: 'RobotoFlex' !important;
+}
+.font-roboto {
+	font-family: 'RobotoFlex';
+}
 @font-face {
 	font-family: 'Eurostile';
 	src: url('../node_modules/ava-styleguide/fonts/Eurostile-LT-Medium.woff');
 }
+.font-eurostile {
+	font-family: 'Eurostile';
+}
+
 
 [data-bs-theme=light] {
 	--vff-bg-color: #FFF;
@@ -402,14 +411,14 @@ $offcanvas-horizontal-width: 35%;
 	--bs-btn-hover-bg: #235E98;
 }
 [data-bs-theme=dark] .btn-outline-primary {
-	--bs-btn-border-color: var(--bs-grayvar-600);
-	--bs-btn-color: var(--bs-primary80);
-	--bs-btn-hover-border-color: #7C868A;
-	--bs-btn-hover-bg: #18313B;
-	--bs-btn-hover-color: var(--bs-primary80);
-	--bs-btn-active-bg: #2A4453;
-	--bs-btn-disabled-border-color: #30363A;
-	--bs-btn-disabled-color: #696F71;
+	--bs-btn-border-color: var(--bs-grayvar-600) !important;
+	--bs-btn-color: var(--bs-primary80) !important;
+	--bs-btn-hover-border-color: #7C868A !important;
+	--bs-btn-hover-bg: #18313B !important;
+	--bs-btn-hover-color: var(--bs-primary80) !important;
+	--bs-btn-active-bg: #2A4453 !important;
+	--bs-btn-disabled-border-color: #30363A !important;
+	--bs-btn-disabled-color: #696F71 !important;
 }
 [data-bs-theme=dark] .btn-outline-primary:focus {
 	--bs-btn-hover-bg: #2A4453;
