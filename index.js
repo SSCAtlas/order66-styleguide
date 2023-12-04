@@ -75,8 +75,10 @@ import User27 from './components/icons/User27.vue'
 import Pause from './components/icons/Pause.vue'
 import ThumbUp from './components/icons/ThumbUp.vue'
 import Star from './components/icons/Star.vue'
+import Refresh from './components/icons/Refresh.vue'
 export default {
 install: (app) => {
+		app.component("Refresh", Refresh)
 		app.component("Pause", Pause)
 		app.component("ThumbUp", ThumbUp)
 		app.component("Star", Star)
