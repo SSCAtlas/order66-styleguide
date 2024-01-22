@@ -150,3 +150,12 @@ you need a contributor npm account to run these, verify on https://www.npmjs.com
 ``sh
 npm publish
 ```
+then push the new puiblished version to github again
+
+(example patch push)
+```
+git push
+npm version patch
+npm publish
+git push
+```
