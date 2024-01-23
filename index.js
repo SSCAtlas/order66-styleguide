@@ -41,7 +41,7 @@ import Files from './components/icons/Files.vue'
 import Filters from './components/icons/Filters.vue'
 import FourSquares from './components/icons/FourSquares.vue'
 import Hamburger from './components/icons/Hamburger.vue'
-import Layout from './components/icons/Layout.vue'
+import IconLayout from './components/icons/IconLayout.vue'
 import LeftArrow from './components/icons/LeftArrow.vue'
 import MagnifyingGlass from './components/icons/MagnifyingGlass.vue'
 import Microphone from './components/icons/Microphone.vue'
@@ -123,7 +123,7 @@ install: (app) => {
 		app.component("Filters", Filters)
 		app.component("FourSquares", FourSquares)
 		app.component("Hamburger", Hamburger)
-		app.component("Layout", Layout)
+		app.component("IconLayout", IconLayout)
 		app.component("LeftArrow", LeftArrow)
 		app.component("MagnifyingGlass", MagnifyingGlass)
 		app.component("Microphone", Microphone)
