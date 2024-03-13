@@ -326,13 +326,13 @@ body {
 	--bs-btn-bg: #244456;
 }
 [data-bs-theme=light] .btn-secondary {
-	--bs-btn-bg: #D4E3FF;
-	--bs-btn-hover-bg: #C3D3EF;
-	--bs-btn-active-bg: #B6C7E3;
-	--bs-btn-color: #001C39;
-	--bs-btn-hover-color: #001C39;
-	--bs-btn-disabled-bg: #DFDFE0;
-	--bs-btn-disabled-color: #88898A;
+	--bs-btn-bg: #D4E3FF !important;
+	--bs-btn-hover-bg: #C3D3EF !important;
+	--bs-btn-active-bg: #B6C7E3 !important;
+	--bs-btn-color: #001C39 !important;
+	--bs-btn-hover-color: #001C39 !important;
+	--bs-btn-disabled-bg: #DFDFE0 !important;
+	--bs-btn-disabled-color: #88898A !important;
 }
 [data-bs-theme=light] .btn-secondary:focus {
 	--bs-btn-bg: #B6C7E3;
