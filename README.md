@@ -161,3 +161,10 @@ npm version patch
 npm publish
 git push
 ```
+
+Downstream projects should have something like this in their readmes:
+```sh
+npm update --save ava-styleguide
+npm run scss
+npm install
+```
