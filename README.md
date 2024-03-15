@@ -2,6 +2,8 @@
 ```sh
 npm install ava-styleguide
 ```
+Thanks for all the downloads, but we're just using this to push some components and Bootstrap overrides downstream to multiple projects, in an attempt to get design system consistency.  For this reason it had to be public.  This approach will change and is probably not useful to anyone outside our company, so sorry.
+
 bootstrap will be added along with override file
 
 ### (New Project Only) Create a new scss file named "styleguide.scss" in the root directory
