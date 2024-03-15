@@ -143,7 +143,7 @@ const response = await legacyUserApi.getCurrentUser()
 ```
 
 ### Update styleguide.scss
-after adding the classes you want to populate in the styleguide 
+after adding the components or classes you want to populate in the styleguide 
 -push changes to github
 ```sh
 npm version <major, minor, patch>
