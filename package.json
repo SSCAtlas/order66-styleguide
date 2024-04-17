@@ -1,6 +1,6 @@
 {
 	"name": "order66-styleguide",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Style guide for OM",
 	"main": "index.js",
 	"scripts": {
